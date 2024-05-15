@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Software Engineer Portfolio</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            background-color: #f5f5f5; /* Light grey background for a clean, professional look */
+        }
+        header {
+            background-color: #ffffff; /* White header for a crisp appearance */
+            color: #4a90e2; /* Soft blue for a pop of color */
+            text-align: center;
+            padding: 20px 0;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Adding subtle shadow for depth */
+        }
+        .container {
+            max-width: 800px; /* Limiting width for optimal reading */
+            margin: 0 auto;
+            padding: 20px;
+        }
+        section {
+            background: #ffffff; /* White backgrounds for sections to keep it bright and professional */
+            margin-top: 20px;
+            padding: 20px;
+            border-radius: 8px; /* Rounded corners for a modern touch */
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05); /* Soft shadows for depth */
+        }
+        h1, h2 {
+            color: #333; /* Dark gray for text, ensuring legibility */
+        }
+        p, li, pre, code {
+            color: #666; /* Lighter gray for body text to reduce harshness */
+        }
+        footer {
+            text-align: center;
+            padding: 20px 0;
+            background-color: #ffffff;
+            color: #666;
+            border-top: 1px solid #eee; /* Subtle border for a clear footer separation */
+            margin-top: 20px;
+        }
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #4a90e2; /* Consistent blue for buttons */
+            color: white;
+            text-decoration: none;
+            border-radius: 4px; /* Smoothed corners for the button */
+            transition: background-color 0.3s;
+        }
+        .button:hover {
+            background-color: #357abd; /* Slightly darker blue on hover for interaction feedback */
+        }
+        pre {
+            background: #f5f5f5; /* Light background for code blocks */
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #eee; /* Subtle border around code blocks */
+        }
+        code {
+            color: #333; /* Keeping code legible with darker text */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>John Doe - Software Engineer</h1>
+    </header>
+    <div class="container">
+        <section id="biography">
+            <h2>Biography</h2>
+            <p>With a robust background in computer science and a passionate drive for solving complex problems, I specialize in developing scalable and efficient software solutions that advance business goals.</p>
+        </section>
+        <section id="education">
+            <h2>Education</h2>
+            <ul>
+                <li>B.Sc. in Computer Science - XYZ University, 2020</li>
+                <li>M.Sc. in Software Engineering - ABC Institute, 2022</li>
+            </ul>
+        </section>
+        <section id="workexperience">
+            <h2>Work Experience</h2>
+            <ul>
+                <li>2020-2022: Junior Developer at Tech Solutions Inc.
+                    <ul>
+                        <li>Developed high-impact, full-stack applications, improving client interactions.</li>
+                        <li>Optimized existing systems, enhancing operational efficiency by 20%.</li>
+                    </ul>
+                </li>
+            </ul>
+        </section>
+        <section id="recognitions">
+            <h2>Recognitions</h2>
+            <p>Recipient of the 2021 Innovator Award for exceptional achievements in algorithm development and system optimizations.</p>
+        </section>
+        <section
+

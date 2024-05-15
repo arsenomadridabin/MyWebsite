@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Software Engineer Portfolio - IDE Theme</title>
+<link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300;400;700&display=swap" rel="stylesheet">
+<style>
+    body, html {
+        margin: 0;
+        padding: 0;
+        font-family: 'Source Code Pro', monospace;
+        background-color: #1e1e1e;
+        color: #d4d4d4;
+    }
+    header, footer {
+        background-color: #252526;
+        color: #fff;
+        padding: 10px 20px;
+        text-align: center;
+    }
+    nav {
+        background-color: #333;
+        padding: 10px;
+        display: flex;
+    }
+    nav a {
+        color: #9CDCFE;
+        margin-right: 20px;
+        text-decoration: none;
+        font-weight: 700;
+    }
+    section {
+        padding: 20px;
+        display: none;
+    }
+    .active {
+        display: block;
+    }
+    .project {
+        margin: 10px 0;
+        border-left: 5px solid #9CDCFE;
+        padding: 10px;
+    }
+    .contact-form input, .contact-form textarea {
+        width: 100%;
+        padding: 10px;
+        margin: 5px 0;
+        background: #333;
+        border: none;
+        color: #fff;
+        border-bottom: 1px solid #555;
+    }
+    .contact-form button {
+        background: #007ACC;
+        color: #fff;
+        border: none;
+        padding: 10px 20px;
+        cursor: pointer;
+    }
+</style>
+<script>
+    function switchTab(tabName) {
+        var tabs = document.querySelectorAll('section');
+        for (var i = 0; i < tabs.length; i++) {
+            tabs[i].style.display = 'none';
+        }
+        document.getElementById(tabName).style.display = 'block';
+    }
+    document.addEventListener("DOMContentLoaded", function() {
+        switchTab('home');
+    });
+</script>
+</head>
+<body>
+
+<header>
+    <h1>John Doe's IDE</h1>
+</header>
+
+<nav>
+    <a href="#" onclick="switchTab('home'); return false;">Home</a>
+    <a href="#" onclick="switchTab('about'); return false;">About</a>
+    <a href="#" onclick="switchTab('portfolio'); return false;">Portfolio</a>
+    <a href="#" onclick="switchTab('contact'); return false;">Contact</a>
+</nav>
+
+<section id="home" class="active">
+    <h2>Welcome</h2>
+    <p>This is my professional portfolio. It is styled like an IDE to reflect my software development background.</p>
+</section>
+
+<section id="about">
+    <h2>About Me</h2>
+    <p>Experienced Software Engineer with a demonstrated history of working in the information technology and services industry. Skilled in Full Stack Development, Data Structures, and Algorithms.</p>
+</section>
+
+<section id="portfolio">
+    <h2>Projects</h2>
+    <div class="project">
+        <h3>Project 1</h3>
+        <p>This project involved creating a responsive web application using React.js, Node.js, and MongoDB.</p>
+    </div>
+    <div class="project">
+        <h3>Project 2</h3>
+        <p>An automation tool developed with Python and Selenium for automating daily tasks and increasing productivity.</p>
+    </div>
+</section>
+
+<section id="contact">
+    <h2>Contact Me</h2>
+    <form class="contact-form" onsubmit="alert('Thank you for your message!'); return false;">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <textarea name="message" placeholder="Your Message" required></textarea>
+        <button type="submit">Send</button>
+    </form>
+</section>
+
+<footer>
+    <p>© 2024 John Doe - All rights reserved</p>
+</footer>
+
+</body>
+</html>
+

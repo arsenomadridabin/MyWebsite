@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Software Engineer Portfolio</title>
+    <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Source Code Pro', monospace;
+            background-color: #0f0f0f; /* Darker background for the body */
+            color: #33ff33; /* Classic green on black */
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #000000; /* Black background for the header */
+            color: #33ff33; /* Green text to match the theme */
+            text-align: center;
+            padding: 20px 0;
+        }
+        .container {
+            padding: 20px;
+        }
+        section {
+            background: #121212; /* Very dark grey as background */
+            margin: 10px 0;
+            padding: 20px;
+            border-left: 5px solid #33ff33; /* Bright green border */
+        }
+        h2 {
+            color: #33ff33;
+        }
+        p, li {
+            color: #33ff33; /* Keeping the text green */
+        }
+        footer {
+            text-align: center;
+            padding: 12px 0;
+            background-color: #000000; /* Footer with black background */
+            color: #33ff33; /* Footer text in green */
+            margin-top: 20px;
+        }
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #22aa22; /* Darker green for buttons */
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        .button:hover {
+            background-color: #33cc33; /* Slightly brighter green on hover */
+        }
+        pre {
+            background: #0f0f0f; /* Matching the body background */
+            padding: 10px;
+            border-radius: 5px;
+        }
+        code {
+            color: #33ff33; /* Green text for code blocks */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>John Doe - Software Engineer</h1>
+    </header>
+    <div class="container">
+        <section id="biography">
+            <h2>Biography</h2>
+            <pre><code>As a Software Engineer with a strong background in both mathematics and computer science,
+I am passionate about solving complex problems and developing innovative software solutions.</code></pre>
+        </section>
+        <section id="education">
+            <h2>Education</h2>
+            <pre><code>B.Sc. in Computer Science - XYZ University, 2020
+M.Sc. in Software Engineering - ABC Institute, 2022</code></pre>
+        </section>
+        <section id="workexperience">
+            <h2>Work Experience</h2>
+            <pre><code>2020-2022: Junior Developer at Tech Solutions Inc.
+- Developed numerous high-impact full-stack applications
+- Optimized existing algorithms, improving efficiency by 20%</code></pre>
+        </section>
+        <section id="recognitions">
+            <h2>Recognitions</h2>
+            <pre><code>Received the Innovator Award in 2021 for exceptional achievements in algorithm optimization.</code></pre>
+        </section>
+        <section>
+            <a href="path/to/your/CV.pdf" download="JohnDoe_CV.pdf" class="button">Download CV</a>
+        </section>
+    </div>
+    <footer>
+        <p>© 2024 John Doe. All rights reserved.</p>
+    </footer>
+</body>
+</html>
+
