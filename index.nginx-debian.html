@@ -50,7 +50,7 @@
         padding-bottom: 5px;
     }
     h3 {
-        color: #3FAD46; 
+        color: #3FAD46;
     }
     .section {
         margin-top: 20px;
@@ -85,18 +85,114 @@
     a:hover {
         text-decoration: underline;
     }
+
+    .skills-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 10px;
+        padding-left: 20px;
+    }
+
+    .skills-grid div {
+        background-color: #44475a;
+        padding: 10px;
+        border-radius: 4px;
+        text-align: center;
+        color: #f8f8f2;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    }
+
+    .skills-table {
+        width: 100%;
+        border-collapse: collapse; /* Ensures that borders between cells are shared */
+        margin-top: 10px;
+        padding-left: 20px;
+        border: 2px solid #50fa7b; /* Green border around the entire table */
+    }
+
+    .skills-table th {
+        background-color: #50fa7b; /* Green background for skill headings */
+        color: #282a36; /* Dark text color */
+        padding: 10px;
+        text-align: left;
+        border: 2px solid #282a36; /* Border around each heading cell */
+        width: 20%; /* Adjust the width of the heading column */
+    }
+
+    .skills-table td {
+        background-color: #44475a; /* Dark background for skills */
+        color: #f8f8f2; /* Light text color */
+        padding: 10px;
+        text-align: center;
+        border: 2px solid #282a36; /* Border around each skill cell */
+    }
+
+    .skills-table th, .skills-table td {
+        border-radius: 4px;
+    }
 </style>
 </head>
 <body>
 <div class="container">
     <header>
         <h1>Abin Shakya</h1>
-        <p> ML Engineer | Data Scientist | Mathematics Enthusiast </p>
+        <p> ML Researcher | Data Scientist | Algorithmic Trader | Mathematics Enthusiast </p>
     </header>
 
     <div class="section profile">
         <h2>Profile</h2>
         <p>I am a PhD student in the Department of Computer Science and Engineering at Louisiana State University. My research interests lie in designing graph-based neural networks to model complex relationships and interactions inherent in various physical systems. Additionally, I am passionate about creating robust and reliable AI models that not only deliver accurate predictions but also quantify the uncertainty associated with these predictions. I enjoy building trading algorithms for fun. It is my way of trying to teach my computer to earn its keep around here--so far, it hasn't asked for a raise!</p>
+    </div>
+
+    <div class="section skills">
+        <h2>Skills and Research Interests</h2>
+        <table class="skills-table">
+            <tr>
+                <th>Programming/Frameworks</th>
+                <td>Python</td>
+                <td>Django</td>
+                <td>R</td>
+                <td>C++</td>
+                <td>CUDA</td>
+                <td>Matlab</td>
+            </tr>
+            <tr>
+                <th>ML/Data Science frameworks</th>
+                <td>Pytorch</td>
+                <td>Tensorflow</td>
+                <td>Keras</td>
+                <td>Pandas</td>
+                <td>PySpark</td>
+                <td>Scikit Learn</td>
+            </tr>
+            <tr>
+                <th>Research Interests</th>
+                <td>Graph Learning</td>
+                <td>Representation Learning</td>
+                <td>Dimensionality Reduction Techniques</td>
+                <td>Uncertainity Quantification in Neural Networks</td>
+                <td>XAI</td>
+                <td> Time Series Analysis</td>
+            </tr>
+            <tr>
+                <th>Research Domain of Interest</th>
+                <td> Molecular Dynamics </td>
+                <td> Finance / Quantitative Research</td>
+                <td> Physics </td>
+                <td> Mathematics </td>
+                <td> Language </td>
+                <td> Vision </td>
+            </tr>
+            <tr>
+                <th>Other Skills/Interest</th>
+                <td>Algorithmic Trading</td>
+                <td>Software Engineering</td>
+                <td>Pattern Recognition</td>
+                <td>DevOps</td>
+                <td>Linux</td>
+                <td>Latex</td>
+            </tr>
+        </table>
     </div>
 
     <div class="section experience">
@@ -135,7 +231,7 @@
                 <li> Offered mentorship and technical guidance to junior software engineers, directing project strategies and promoting professional growth within the team.</li>
             </ul>
         </div>
-             <div class="job">
+        <div class="job">
             <h3>Software Engineer - Sparrow Pay Private Limited</h3>
             <p><strong> October 2017 - October 2019</strong></p>
             <ul>
@@ -145,30 +241,41 @@
                 <li>Collaborated closely with the Operations team to ensure the provision of essential data required for their workflows.</li>
                 <li> Address and resolve technical issues reported by Customer Support. </li>
                 <li> Document APIs in Swagger.</li>
-
             </ul>
         </div>
-
-
     </div>
 
     <div class="section education">
         <h2>Education</h2>
         <div class="school">
             <h3>PhD in Computer Science</h3>
-            <p><strong>Louisiana State University</strong> - August 2021 - Present</p>
+            <p><strong>Louisiana State University</strong> - August 2021 - Present (4.062/4.0)</p>
         </div>
         <div class="school">
             <h3> Bachelors of Computer Engineering</h3>
-            <p><strong>Tribhuvan University</strong> - November 2013 - September 2017 </p>
+            <p><strong>Tribhuvan University</strong> - November 2013 - September 2017 (3.602/4)</p>
         </div>
     </div>
 
+    <div class="section honors">
+
+    <div class="section publications">
+        <h2>Publications</h2>
+        <div class="school">
+            <ul>
+                <li>
+                    <p><strong>Shakya, A.</strong>, Ghosh, D.B., Jackson, C., Morra, G., Karki, B.B. (2024). <em>Insights into core-mantle differentiation from bulk Earth melt simulations.</em> Scientific Reports. DOI: <a href="https://doi.org/10.1038/s41598-024-69873-8" target="_blank">10.1038/s41598-024-69873-8</a>.</p>
+                </li>
+                <li>
+                    <p><strong>Shakya, A.</strong>, Pokharel, A., Bhattarai, A., Sitikhu, P., Shakya, S. (2018). <em>Real-Time Stock Prediction Using Neural Network.</em> 8th International Conference, Confluence 2018— IEEE. ISBN: 978-1-5386-1720-5.</p>
+                </li>
+            </ul>
+        </div>
+    </div>
 
     <footer>
-    Copyright 2024 &copy; Abin Shakya. All rights reserved.
-</footer>
+        Copyright 2024 &copy; Abin Shakya. All rights reserved.
+    </footer>
 </div>
 </body>
 </html>
-
